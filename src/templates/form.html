@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:8000/applications/" method="post" enctype="multipart/form-data">
+        <label>Company:</label>
+        <input type="text" name="company" required><br>
+
+        <label>Job Title:</label>
+        <input type="text" name="job_title" required><br>
+
+        <label>Job Posting Link:</label>
+        <input type="url" name="job_posting_link" required><br>
+
+        <!-- <label>Applied:</label>
+        <input type="checkbox" name="applied"><br> -->
+
+        <label>Application Date:</label>
+        <input type="date" name="application_date"><br>
+
+        <label>Referred:</label>
+        <input type="checkbox" name="referred"><br>
+
+        <label>Status:</label>
+        <input type="text" name="status"><br>
+
+        <label>Notes:</label>
+        <textarea name="notes"></textarea><br>
+
+        <label>Resume:</label>
+        <input type="file" name="resume"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
